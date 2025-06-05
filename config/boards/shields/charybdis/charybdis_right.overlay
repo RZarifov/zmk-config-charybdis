@@ -51,7 +51,11 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        /*   optional features   */
+        pixart,cpi = <3200>;
+        pixart,cpi-dividor = <4>;
+        pixart,snipe-cpi = <800>;
+        pixart,snipe-cpi-dividor = <4>;
+
         snipe-layers = <2>;
         scroll-layers = <3>;
         /* automouse-layer = <4>; */
