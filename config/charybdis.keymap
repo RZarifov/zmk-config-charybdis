@@ -6,14 +6,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <input/processors.dtsi>
-#include <dt-bindings/zmk/pointing.h>
-
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000  // Normal cursor speed
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80    // Scroll speed
-
-// Layer aliases for clarity
-#define SNIP 2    // Your precision layer
-#define SCROLL 3  // Your scroll layer
 
 &mmv {
     time-to-max-speed-ms = <120>;
@@ -28,23 +20,13 @@
 // Precision mode - 4x slower cursor movement
 &mmv_input_listener {
     set_precision_mode {
-        layers = <SNIP>;
+        layers = <2>;
         input-processors = <&zip_xy_scaler 1 4>;  // 1/4 speed = precision
     };
 };
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
-};
-
-&trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-    input-processors = <
-        &zip_xy_scaler 1 2                           // 1/2 speed
-        &zip_transform INPUT_TRANSFORM_Y_INVERT      // Y invert
-        &zip_transform INPUT_TRANSFORM_XY_SWAP       // 90° rotation
-    >;
 };
 
 &mt {

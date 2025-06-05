@@ -59,9 +59,14 @@
 };
 
 / {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-    input-processors = <&zip_scroll_transform(INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
-  };
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        input-processors = <
+            &zip_xy_scaler 1 2                           // 1/2 speed
+            &zip_transform INPUT_TRANSFORM_X_INVERT      // X invert
+            &zip_transform INPUT_TRANSFORM_Y_INVERT      // Y invert
+            &zip_transform INPUT_TRANSFORM_XY_SWAP       // 90° rotation
+        >;
+    };
 };
