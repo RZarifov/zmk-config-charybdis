@@ -37,6 +37,16 @@
     chosen { zmk,matrix_transform = &default_transform; };
 };
 
+&trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+    input-processors = <
+        &zip_xy_scaler 1 2                           // 1/2 speed
+        &zip_transform INPUT_TRANSFORM_Y_INVERT      // Y invert
+        &zip_transform INPUT_TRANSFORM_XY_SWAP       // 90° rotation
+    >;
+};
+
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
