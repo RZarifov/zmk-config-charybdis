@@ -1,6 +1,7 @@
 #include "charybdis.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
 #include <input/processors.dtsi>
+#include <dt-bindings/input/input-event-codes.h>
 
 &default_transform {
 	col-offset = <6>;
@@ -52,6 +53,8 @@
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
         evt-type = <1>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
 
         pixart,cpi = <3200>;
         pixart,cpi-dividor = <4>;
