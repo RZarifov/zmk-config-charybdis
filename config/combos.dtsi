@@ -40,14 +40,14 @@
         combo_scroll_mode {
             timeout-ms = <50>;
             require-prior-idle-ms = <250>;
-            key-positions = <40 38>;  // Left half M + .
+            key-positions = <38 40>;  // Left half M + .
             bindings = <&mo 2>;
         };
 
         combo_precise_mode {
             timeout-ms = <50>;
             require-prior-idle-ms = <250>;
-            positions = <25 26 27>; 
+            key-positions = <25 26 27>; 
             bindings = <&tog 3>;
         };
 
