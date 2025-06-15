@@ -63,18 +63,14 @@
     };
 };
 
-/ {
-    /*  Cursor movement acceleration  */
-    &mmv {
-        time-to-max-speed-ms = <500>;
-        acceleration-exponent = <3>;
-    };
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <3>;
+};
 
-    /*  Scroll acceleration */
-    &msc {
-        time-to-max-speed-ms = <200>;
-        acceleration-exponent = <1>;
-    };
+&msc {
+    time-to-max-speed-ms = <200>;
+    acceleration-exponent = <1>;
 };
 
 / {
