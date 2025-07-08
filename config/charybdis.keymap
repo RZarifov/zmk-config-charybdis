@@ -79,6 +79,16 @@
             >;
         };
 
+        SC2 {
+            bindings = <
+                &kp N1        &kp N2      &kp N3      &kp N4      &kp N5      &kp N6          &none         &none       &none       &none       &none       &none
+                &kp Y         &kp Q       &kp W       &kp E       &kp R       &kp T           &none         &none       &none       &none       &none       &none
+                &kp BSLASH    &kp A       &kp S       &kp D       &kp F       &kp G           &none         &none       &none       &none       &none       &none
+                &kp ESC       &kp Z       &kp X       &kp C       &kp V       &kp B           &none         &none       &none       &none       &none       &none
+                              &kp LALT    &kp LSHIFT  &kp TAB     &kp LCTRL   &kp LS(TAB)                      &none       &none       &none
+            >;
+        };
+
         GAME {
             bindings = <
         &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &kp N6          &none  &none  &none  &none  &none  &none
@@ -89,14 +99,5 @@
             >;
         };
 
-        SC2 {
-            bindings = <
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-               &none  &none  &none  &none  &none          &none  &none  &none
-            >;
-        };
     };
 };
