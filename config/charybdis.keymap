@@ -149,7 +149,17 @@
             >;
         };
 
-        SC2_EMPTY {
+        SC2_UTILITIES {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
+
+        EMPTY_LAYER {
             bindings = <
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
