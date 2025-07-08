@@ -139,6 +139,16 @@
             >;
         };
 
+        SC2_TRANSFER {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
+
         SC2_TELEPORT {
             bindings = <
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
