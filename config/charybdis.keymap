@@ -99,5 +99,64 @@
             >;
         };
 
+        SC2_BASE {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
+
+        SC2_RAPID {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
+
+        SC2_SET {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
+
+        SC2_ADD {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
+
+        SC2_TELEPORT {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
+
+        SC2_EMPTY {
+            bindings = <
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
+               &none  &none  &none  &none  &none          &none  &none  &none
+            >;
+        };
     };
 };
