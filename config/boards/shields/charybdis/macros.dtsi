@@ -1,0 +1,21 @@
+/ {
+    macros {
+        stutter_step: stutter_step {
+            label = "Stutter Step";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press
+                &kp A                     // Attack command
+                &macro_release
+                &macro_wait_time 16       // Brief delay
+                &mkp LCLK                 // Left click to attack
+                &macro_wait_time 100      // Wait for attack cooldown
+                &mkp RCLK                 // Right click to move
+                &macro_wait_time 50       // Brief movement time
+                &macro_pause_for_release  // Pause until key is released
+                &kp ESC                   // Cleanup: press Escape
+            >;
+        };
+    };
+};
