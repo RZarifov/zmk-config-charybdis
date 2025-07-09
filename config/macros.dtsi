@@ -6,9 +6,9 @@
             #binding-cells = <0>;
             bindings = <
                 &kp T
-                &macro_wait_time 100
+                &macro_wait_time 25
                 &mkp LCLK
-                &macro_wait_time 100
+                &macro_wait_time 25
                 &mkp RCLK
             >;
         };
