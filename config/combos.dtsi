@@ -149,12 +149,28 @@
             bindings = <&kp C_BRI_DN>;
         };
 
-        combo_sc2_basic_toggle {
+        combo_sc2_toggle {
             timeout-ms = <25>;
             require-prior-idle-ms = <500>;
             key-positions = <0 11>;      // 1st key (NON_US_BACKSLASH) + 12th key (NON_US_HASH)
             bindings = <&tog 6>;
             layers = <0 6>;
+        };
+
+        combo_sc2_tab_forward {
+            timeout-ms = <25>;
+            require-prior-idle-ms = <500>;
+            key-positions = <0 11>;      // 1st key (NON_US_BACKSLASH) + 12th key (NON_US_HASH)
+            bindings = <&tog 6>;
+            layers = <6 7 8>;
+        };
+
+        combo_sc2_tab_backward {
+            timeout-ms = <25>;
+            require-prior-idle-ms = <500>;
+            key-positions = <0 11>;      // 1st key (NON_US_BACKSLASH) + 12th key (NON_US_HASH)
+            bindings = <&tog 6>;
+            layers = <6 7 8>;
         };
     };
 };

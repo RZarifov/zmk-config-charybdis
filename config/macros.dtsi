@@ -12,5 +12,116 @@
                 &mkp LCLK
             >;
         };
+
+        w_rapid_fire: w_rapid_fire {
+            label = "Rapid Fire W";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp W            // Press W ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        e_rapid_fire: e_rapid_fire {
+            label = "Rapid Fire E";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp E            // Press E ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        r_rapid_fire: r_rapid_fire {
+            label = "Rapid Fire R";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp R            // Press R ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        s_rapid_fire: s_rapid_fire {
+            label = "Rapid Fire S";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp S            // Press S ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        d_rapid_fire: d_rapid_fire {
+            label = "Rapid Fire D";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp D            // Press D ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        f_rapid_fire: f_rapid_fire {
+            label = "Rapid Fire F";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp F            // Press F ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        x_rapid_fire: x_rapid_fire {
+            label = "Rapid Fire X";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp X            // Press X ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        c_rapid_fire: c_rapid_fire {
+            label = "Rapid Fire C";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp C            // Press C ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        v_rapid_fire: v_rapid_fire {
+            label = "Rapid Fire V";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp V            // Press V ability
+                &macro_wait_time 25  // 25 ms delay
+                &mkp LCLK            // Left mouse click
+            >;
+        };
+
+        sc2_ping: sc2_ping {
+            label = "SC2 Ping";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &macro_press
+                &kp LALT                 // Hold Alt
+                &mkp LCLK               // Left click while Alt held
+                &macro_release
+            >;
+        };
     };
 };

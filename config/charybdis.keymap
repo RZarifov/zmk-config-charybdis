@@ -114,21 +114,21 @@
 
         SC2_RAPID {
             bindings = <
-        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+                &kp N1   &kp N2     &kp N3          &kp N4          &kp N5          &kp N6          &none  &none  &none  &none  &none  &none
+                &none    &none      &w_rapid_fire   &e_rapid_fire   &r_rapid_fire   &stutter_step   &none  &none  &none  &none  &none  &none
+                &none    &none      &s_rapid_fire   &d_rapid_fire   &f_rapid_fire   &kp G           &none  &none  &none  &none  &none  &none
+                &kp ESC  &none      &x_rapid_fire   &c_rapid_fire   &v_rapid_fire   &kp B           &none  &none  &none  &none  &none  &none
+                         &none      &none           &none           &none           &none           &none  &none  &none
             >;
         };
 
         SC2_ADDITIONAL {
             bindings = <
-        &kp F10                     &kp PAUSE_BREAK          &kp N7  &kp N8  &kp N9  &kp N0          &none  &none  &none  &none  &none  &none
-        &kp F5                      &kp F6                   &kp O   &kp K   &kp J   &stutter_step   &none  &none  &none  &none  &none  &none
-        &kp F7                      &kp F8                   &none   &kp U   &kp I   &kp H           &none  &none  &none  &none  &none  &none
-        &kp LS(NON_US_BACKSLASH)    &kp NON_US_BACKSLASH     &none   &none   &kp M   &kp N           &none  &none  &none  &none  &none  &none
-                                    &none                    &none   &none   &none   &none                  &none  &none  &none
+        &kp F10                     &kp PAUSE_BREAK            &kp N7              &kp N8      &kp N9  &kp N0          &none  &none  &none  &none  &none  &none
+        &kp F5                      &kp F6                     &kp O               &kp K       &kp J   &stutter_step   &none  &none  &none  &none  &none  &none
+        &kp F7                      &kp F8                     &kp SPACE           &kp U       &kp I   &kp H           &none  &none  &none  &none  &none  &none
+        &kp LS(NON_US_BACKSLASH)    &kp LC(NON_US_BACKSLASH)   &kp LA(SPACE)       &sc2_ping   &kp M   &kp N           &none  &none  &none  &none  &none  &none
+                                    &none                      &none               &none       &none   &none           &none  &none  &none
             >;
         };
 
