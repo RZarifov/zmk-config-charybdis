@@ -89,6 +89,7 @@
             >;
         };
 
+        /* MY OLD BASIC SC2 LAYER
         SC2_BASIC {
             bindings = <
                 &kp N1                    &kp N2      &kp N3      &kp N4      &kp N5      &kp N6          &none         &none       &none       &none       &none       &none
@@ -98,24 +99,35 @@
                                           &kp LALT    &kp LSHIFT  &kp TAB     &kp LCTRL   &kp LS(TAB)                   &none       &none       &none
             >;
         };
+        */
 
         SC2_BASE {
             bindings = <
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-               &none  &none  &none  &none  &none          &none  &none  &none
+        &kp N1   &kp N2     &kp N3  &kp N4  &kp N5  &kp N6         &none  &none  &none  &none  &none  &none
+        &kp F1   &kp F2     &kp W   &kp E   &kp R   &kp T          &none  &none  &none  &none  &none  &none
+        &kp F3   &kp F4     &kp S   &kp D   &kp F   &kp G          &none  &none  &none  &none  &none  &none
+        &kp ESC  &kp Y      &kp X   &kp C   &kp V   &kp B          &none  &none  &none  &none  &none  &none
+                 &none      &none   &mo 6   &none   &none          &none  &none  &none
             >;
         };
 
         SC2_RAPID {
             bindings = <
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-               &none  &none  &none  &none  &none          &none  &none  &none
+        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans   &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+            >;
+        };
+
+        SC2_ADDITIONAL {
+            bindings = <
+        &kp F10                     &kp PAUSE_BREAK          &kp N7  &kp N8  &kp N9  &kp N0          &none  &none  &none  &none  &none  &none
+        &kp F5                      &kp F6                   &none   &none   &none   &none           &none  &none  &none  &none  &none  &none
+        &kp F7                      &kp F8                   &none   &none   &none   &kp H            &none  &none  &none  &none  &none  &none
+        &kp LS(NON_US_BACKSLASH)    &kp NON_US_BACKSLASH     &none   &kp M   &kp N   &kp N           &none  &none  &none  &none  &none  &none
+                                    &none                    &none   &none   &none   &none                  &none  &none  &none
             >;
         };
 
@@ -150,16 +162,6 @@
         };
 
         SC2_TELEPORT {
-            bindings = <
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-               &none  &none  &none  &none  &none          &none  &none  &none
-            >;
-        };
-
-        SC2_UTILITIES {
             bindings = <
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
