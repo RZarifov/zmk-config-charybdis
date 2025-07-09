@@ -8,7 +8,7 @@
                 &kp T
                 &macro_wait_time 25
                 &mkp LCLK
-                &macro_wait_time 500
+                &macro_wait_time 1000
                 &mkp RCLK
             >;
         };
