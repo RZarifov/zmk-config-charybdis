@@ -6,7 +6,7 @@
             #binding-cells = <0>;
             bindings = <
                 &macro_press
-                &kp A                     // Attack command
+                &kp T                     // Attack command
                 &macro_release
                 &macro_wait_time 16       // Brief delay
                 &mkp LCLK                 // Left click to attack
