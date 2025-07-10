@@ -104,11 +104,11 @@
 
         SC2_BASE {
             bindings = <
-        &kp N1   &kp N2     &kp N3  &kp N4  &kp N5                &kp N6         &none  &none  &none  &none  &none  &none
-        &kp F1   &kp F2     &kp W   &kp E   &kp R                 &kp T          &none  &none  &none  &none  &none  &none
-        &kp F3   &kp F4     &kp S   &kp D   &kp F                 &kp G          &none  &none  &none  &none  &none  &none
-        &kp ESC  &kp Y      &kp X   &kp C   &kp V                 &kp B          &none  &none  &none  &none  &none  &none
-                 &none      &none   &mo 8   &activate_set_layer   &mo 7          &none  &none  &none
+        &kp N1   &kp N2          &kp N3         &kp N4  &kp N5                &kp N6         &none  &none  &none  &none  &none  &none
+        &kp F1   &kp F2          &kp W          &kp E   &kp R                 &kp T          &none  &none  &none  &none  &none  &none
+        &kp F3   &kp F4          &kp S          &kp D   &kp F                 &kp G          &none  &none  &none  &none  &none  &none
+        &kp ESC  &kp Y           &kp X          &kp C   &kp V                 &kp B          &none  &none  &none  &none  &none  &none
+                 &alt_layer      &shift_layer   &mo 8   &ctrl_layer   &mo 7          &none  &none  &none
             >;
         };
 
@@ -132,7 +132,7 @@
             >;
         };
 
-        SC2_SET {
+        SC2_CONTROL {
             bindings = <
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
@@ -142,23 +142,23 @@
             >;
         };
 
-        SC2_ADD {
+        SC2_SHIFT {
             bindings = <
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-               &none  &none  &none  &none  &none          &none  &none  &none
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
 
-        SC2_TRANSFER {
+        SC2_ALT {
             bindings = <
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-        &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-               &none  &none  &none  &none  &none          &none  &none  &none
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
 
