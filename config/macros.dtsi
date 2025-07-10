@@ -129,10 +129,10 @@
             bindings = <
                 &macro_press
                 &kp LCTRL                    // Hold Ctrl
-                &mo SC2_SET                  // Activate layer
+                &mo 9                        // Activate layer
                 &macro_pause_for_release
                 &macro_release
-                &mo SC2_SET                  // Release layer
+                &mo 9                        // Release layer
                 &kp LCTRL                    // Release Ctrl
             >;
         };
