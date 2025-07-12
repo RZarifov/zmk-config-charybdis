@@ -90,25 +90,13 @@
             >;
         };
 
-        /* MY OLD BASIC SC2 LAYER
-        SC2_BASIC {
-            bindings = <
-                &kp N1                    &kp N2      &kp N3      &kp N4      &kp N5      &kp N6          &none         &none       &none       &none       &none       &none
-                &kp Y                     &kp Q       &kp W       &kp E       &kp R       &kp T           &none         &none       &none       &none       &none       &none
-                &kp NON_US_BACKSLASH      &kp A       &kp S       &kp D       &kp F       &kp G           &none         &none       &none       &none       &none       &none
-                &kp ESC                   &kp Z       &kp X       &kp C       &kp V       &kp B           &none         &none       &none       &none       &none       &none
-                                          &kp LALT    &kp LSHIFT  &kp TAB     &kp LCTRL   &kp LS(TAB)                   &none       &none       &none
-            >;
-        };
-        */
-
         SC2_BASE {
             bindings = <
         &kp N1   &kp N2          &kp N3         &kp N4             &kp N5        &kp N6          &none  &none  &none  &none  &none  &none
         &kp F1   &kp F2          &kp W          &kp E              &kp R         &kp T           &none  &none  &none  &none  &none  &none
         &kp F3   &kp F4          &kp S          &kp D              &kp F         &kp G           &none  &none  &none  &none  &none  &none
         &kp ESC  &kp Y           &kp X          &kp C              &kp V         &kp B           &none  &none  &none  &none  &none  &none
-                 &alt_layer      &shift_layer   &lt 8 LS(TAB)      &ctrl_layer   &lt 7 TAB          &none  &none  &none
+                 &alt_layer      &shift_layer   &lt 8 LS(TAB)      &ctrl_layer   &lt 7 TAB              &none  &none  &none
             >;
         };
 
@@ -118,7 +106,7 @@
                 &kp F5                      &kp F6                     &w_rapid_fire   &e_rapid_fire   &r_rapid_fire   &stutter_step   &none  &none  &none  &none  &none  &none
                 &kp F7                      &kp F8                     &s_rapid_fire   &d_rapid_fire   &f_rapid_fire   &kp TAB         &none  &none  &none  &none  &none  &none
                 &kp LS(NON_US_BACKSLASH)    &kp LC(NON_US_BACKSLASH)   &kp SPACE       &kp N           &kp H           &kp LS(TAB)     &none  &none  &none  &none  &none  &none
-                         &none      &none           &none           &none           &none                                              &none  &none  &none
+                                            &trans                     &trans          &trans          &trans          &trans                 &none  &none  &none
             >;
         };
 
@@ -128,7 +116,7 @@
                 &kp F5                      &kp F6                     &kp O               &kp K       &kp J   &stutter_step   &none  &none  &none  &none  &none  &none
                 &kp F7                      &kp F8                     &kp LA(SPACE)       &kp U       &kp I   &kp TAB         &none  &none  &none  &none  &none  &none
                 &kp LS(NON_US_BACKSLASH)    &kp LC(NON_US_BACKSLASH)   &kp SPACE           &kp N       &kp H   &kp LS(TAB)     &none  &none  &none  &none  &none  &none
-                                            &none                      &none               &none       &none   &none           &none  &none  &none
+                                            &trans                     &trans              &trans      &trans  &trans                 &none  &none  &none
             >;
         };
 
@@ -138,7 +126,7 @@
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
@@ -148,7 +136,7 @@
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
@@ -158,7 +146,7 @@
         &trans      &trans      &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)          &trans  &trans  &trans  &trans  &trans  &trans
         &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6              &trans  &trans  &trans  &trans  &trans  &trans
         &trans      &trans      &kp N7      &kp N8      &kp N9      &kp N0              &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans      &trans      &trans      &trans      &trans              &trans  &trans  &trans
+                    &trans      &trans      &trans      &trans      &trans                      &trans  &trans  &trans
             >;
         };
 
@@ -168,7 +156,7 @@
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
         &none  &none  &none  &none  &none  &none          &none  &none  &none  &none  &none  &none
-               &none  &none  &none  &none  &none          &none  &none  &none
+               &none  &none  &none  &none  &none                 &none  &none  &none
             >;
         };
     };
